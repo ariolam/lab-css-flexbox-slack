@@ -8,3 +8,287 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+
+/* Nav */
+.nav-bar,
+.introduction {
+    background-color: #540b51;
+}
+.menu-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.menu-items li a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+.slack-logo {
+    width: 177px;
+    margin-top: 40px;
+}
+
+/* Header */
+header {
+    background-color: #540b51;
+}
+header h1 {
+    font-size: 4rem;
+    color: white;
+}
+.introduction p {
+    color: white;
+    font-size: 2rem;
+}
+.registration {
+    display: flex;
+    text-align: start;
+    justify-content: flex-start;
+}
+.registration-btn {
+    width: 222px;
+    height: 58px;
+    margin: 12px 12px;
+    text-transform: uppercase;
+    color: #540b51;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+.google-logo {
+    width: 32px;
+    background-color: white;
+}
+.google-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: #4285f4;
+    color: white;
+    width: 222px;
+    height: 58px;
+    border: 1px solid #4285f4;
+    border-radius: 4px;
+}
+
+/* Main */
+main {
+    background-color: #f3eae2;
+}
+
+/* companies section */
+.companies {
+    height: 300px;
+}
+.companies p {
+    text-align: center;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+.companies .partners {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 86px;
+}
+.partners img {
+    height: 50px;
+    object-fit: cover;
+}
+
+/* services section */
+.services {
+    display: flex;
+    margin-top: 38px;
+}
+.service-img {
+    width: 50%;
+}
+.service-img img {
+    height: 700px;
+    object-fit: cover;
+}
+.service-info {
+    width: 50%;
+}
+.service-info h2 {
+    font-size: 6em;
+}
+.service-info p {
+    font-size: 2em;
+    margin: 21px 12px;
+}
+.service-info a {
+    text-decoration: none;
+    color: #2e71a6;
+    font-size: 1.5em;
+}
+/* statistics section */
+.statistics {
+    text-align: center;
+    background-color: white;
+}
+.statistics h3 {
+    font-size: 3.5em;
+    color: #540b51;
+}
+.statistics p {
+    margin: 12px;
+}
+.statistics-btns {
+    margin: 32px 12px;
+}
+.contact-btn {
+    padding: 17px 12px;
+    margin-right: 22px;
+    width: 261px;
+    background-color: #540b51;
+    color: white;
+    border: 1px solid #540b51;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+.sales-btn {
+    padding: 17px 12px;
+    width: 141px;
+    background-color: white;
+    color: #540b51;
+    border: 1px solid #540b51;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+.statistics ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+.statistics ul li {
+    width: 190px;
+}
+.results {
+    font-size: 5em;
+    color: #540b51;
+    font-weight: bold;
+}
+/* digital section */
+.digital-hq {
+    background-color: #540b51;
+    height: 300px;
+    text-align: center;
+}
+.digital-hq h3 {
+    color: white;
+    font-size: 3.5em;
+    padding: 42px;
+}
+.trial-btn {
+    width: 170px;
+    padding: 17px;
+    background-color: white;
+    color: #540b51;
+    text-transform: uppercase;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-right: 12px;
+}
+.contact-sales-btn {
+    width: 170px;
+    padding: 17px;
+    background-color: #540b51;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo {
+    width: 82px;
+    margin: 51px 12px;
+}
+.footer ul li:first-child {
+    font-weight: bold;
+}
+.footer ul li {
+    line-height: 40px;
+    opacity: 0.3px;
+}
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+}
+.social-icons li {
+    margin: 15px 57px;
+    font-size: 30px;
+}
+.terms {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin: 28px 50px;
+}
+small {
+    opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+    .nav-bar {
+        width: 446vw;
+    }
+    .nav-bar ul {
+        display: none;
+    }
+    .slack-logo {
+        width: 100px;
+    }
+    .search-icon,
+    .menu-icon {
+        background-color: #540b51;
+    }
+    header h1 {
+        font-size: 2.5rem;
+        margin: 0px 30px;
+    }
+    .introduction p {
+        font-size: 1rem;
+        margin: 17px 40px;
+    }
+    .registration {
+        flex-direction: column;
+    }
+    .registration-btn,
+    .google-btn {
+        width: 354px;
+    }
+    .google-btn {
+        margin-left: 12px;
+    }
+    .google-logo {
+        position: absolute;
+        left: 24px;
+    }
+    .hero-img {
+        width: 400px;
+        margin-top: 30px;
+    }
+}
+/* @media (min-width: 768px) and (max-width: 1024px) {
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+}
+@media (min-width: 1440px) {
+} */
